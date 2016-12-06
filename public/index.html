@@ -6,20 +6,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<ul class="pages">
-    <li class="chat page">
-        <div class="chatArea">
-            <ul class="messages"></ul>
-        </div>
-        <input class="inputMessage" placeholder="Напишите сообщение..."/>
-    </li>
-    <li class="login page">
-        <div class="form">
-            <h3 class="title">Введите имя пользователя</h3>
-            <input class="usernameInput" type="text" maxlength="14" />
-        </div>
-    </li>
-</ul>
+    <ul class="pages">
+        <li class="chat page">
+            <div class="chatArea">
+                <ul class="messages"></ul>
+            </div>
+            <input class="inputMessage" placeholder="Напишите сообщение..."/>
+        </li>
+        <li class="login page">
+            <div class="form">
+                <h3 class="title">Введите имя пользователя</h3>
+                <input class="usernameInput" type="text" maxlength="14" />
+
+                <h3 class="title">Комната</h3>
+                <select name="room" id="room">
+                    <option value="main">Главная</option>
+                    <option value="auto">Автомобили</option>
+                    <option value="movies">Фильмы</option>
+                </select>
+            </div>
+        </li>
+    </ul>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>

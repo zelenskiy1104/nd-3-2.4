@@ -72,6 +72,14 @@ ul {
   width: 400px;
 }
 
+.login.page .form select {
+    width: 400px;
+}
+
+.login.page .form span {
+    color: #fff;
+}
+
 .login.page .title {
   font-size: 200%;
 }
